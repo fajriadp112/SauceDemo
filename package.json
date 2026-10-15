@@ -1,0 +1,15 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "node -e \"require('child_process').exec(process.platform==='win32'?'start report\\\\report.html':(process.platform==='darwin'?'open':'xdg-open')+' report/report.html')\"",
+    "report:playwright": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
